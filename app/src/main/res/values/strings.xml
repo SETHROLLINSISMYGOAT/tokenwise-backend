@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TokenWise</string>
+    <string name="export_transactions">📤 Export Transactions</string>
+    <string name="jupiter_0_raydium_0_orca_0">Jupiter: 0, Raydium: 0, Orca: 0</string>
+    <string name="protocol_usage">⚙️ Protocol Usage:</string>
+    <string name="active_wallets">🔁 Active Wallets:</string>
+    <string name="market_trend_neutral">Market Trend: Neutral</string>
+    <string name="sell_volume">↘ Sell Volume</string>
+    <string name="sells_0">Sells: 0</string>
+    <string name="buy_volume">↗ Buy Volume</string>
+    <string name="buys_0">Buys: 0</string>
+    <string name="tokenwise_solana_wallet_intel">TokenWise: Solana Wallet Intel</string>
+</resources>

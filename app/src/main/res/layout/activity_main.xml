@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#101010"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tokenwise_solana_wallet_intel"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="#1F1F1F"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/buyCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buys_0"
+                    android:textColor="#00FF00"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buy_volume"
+                    android:textColor="#AAAAAA"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="#1F1F1F"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sellCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sells_0"
+                    android:textColor="#FF4444"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sell_volume"
+                    android:textColor="#AAAAAA"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/marketDirection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/market_trend_neutral"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Most Active Wallets -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/active_wallets"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"/>
+
+        <ListView
+            android:id="@+id/walletListView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#181818"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/protocol_usage"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:id="@+id/protocolStats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jupiter_0_raydium_0_orca_0"
+            android:textColor="#CCCCCC"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"/>
+
+
+        <Button
+            android:id="@+id/exportButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/export_transactions"
+            android:textAllCaps="false"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#0066FF"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</ScrollView>
